@@ -7,17 +7,23 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Promotion from '../components/Promotion'
 import Footer from '../components/Footer'
+import Navbar from "../components/Navbar"
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Header></Header>
+    <main>
+    {/* <Layout> */}
+      <div id='jumbotron' style={{backgroundColor: 'grey'}}>
+        <Navbar></Navbar>
+        <Header></Header>
+      </div>
       <Work></Work>
       <About></About>
       <Skills></Skills>
       <Promotion></Promotion>
       <Footer></Footer>
-    </Layout>
+    {/* </Layout> */}
+    </main>
   )
 }
 

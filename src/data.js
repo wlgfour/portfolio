@@ -1,9 +1,20 @@
+// images
+import meImage from './images/me.jpg'
+
+// skills icons
 import htmlIcon from "./images/html.svg"
 import cssIcon from "./images/css.svg"
 import reactIcon from "./images/react.svg"
 import jsIcon from "./images/javascript.svg"
 import designIcon from "./images/design.svg"
 import codeIcon from "./images/code.svg"
+import pythonIcon from './images/python.svg'
+import sqlIcon from './images/sql.svg'
+import latexIcon from './images/latex.svg'
+import pytorchIcon from './images/pytorch.svg'
+import gitIcon from './images/git.svg'
+import linuxIcon from './images/linux.svg'
+import cloudIcon from './images/cloud.svg'
 
 // Social Icon
 import githubIcon from "./images/github.svg"
@@ -21,12 +32,6 @@ const data = {
         }
     ],
     projects: [
-        // {
-        //     title: '',
-        //     para: '',
-        //     imageSrc: '',
-        //     url: '',
-        // }, 
         {
             title: "Project One", //Project Title - Add Your Project Title Here
             para:
@@ -91,16 +96,16 @@ const data = {
             //Project URL - Add Your Project Url Here
             url: "http://chetanverma.com/",
           },      
-    ],
-
+    ], 
+    about: {
+      aboutp1: 'This is a paragraph about me.',
+      aboutp2: 'This is a paragraph about things I like doing, but focuased around work',
+      aboutp3: 'This is a paragraph about things I like, but not really related to work',
+      image: meImage
+    },
     skills: [
         {
-          img: htmlIcon,
-          para:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        },
-        {
-          img: cssIcon,
+          img: pythonIcon,
           para:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         },
@@ -110,17 +115,37 @@ const data = {
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         },
         {
+          img: sqlIcon,
+          para:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        },
+        {
+          img: latexIcon,
+          para:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        },
+        {
           img: reactIcon,
           para:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         },
         {
-          img: designIcon,
+          img: pytorchIcon,
           para:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         },
         {
-          img: codeIcon,
+          img: gitIcon,
+          para:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        },
+        {
+          img: linuxIcon,
+          para:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        },
+        {
+          img: cloudIcon,
           para:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         },
