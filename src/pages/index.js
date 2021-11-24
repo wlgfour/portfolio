@@ -8,22 +8,19 @@ import Skills from '../components/Skills'
 import Promotion from '../components/Promotion'
 import Footer from '../components/Footer'
 import Navbar from "../components/Navbar"
+import Jumbotron from '../components/Jumbotron'
 
 const IndexPage = () => {
   return (
-    <main>
-    {/* <Layout> */}
-      <div id='jumbotron' style={{backgroundColor: 'grey'}}>
-        <Navbar></Navbar>
-        <Header></Header>
-      </div>
+    <Layout>
+      <Jumbotron></Jumbotron>
+      <Header></Header>
       <Work></Work>
       <About></About>
       <Skills></Skills>
       <Promotion></Promotion>
       <Footer></Footer>
-    {/* </Layout> */}
-    </main>
+    </Layout>
   )
 }
 
