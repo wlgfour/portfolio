@@ -7,7 +7,6 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Promotion from '../components/Promotion'
 import Footer from '../components/Footer'
-import Navbar from "../components/Navbar"
 import Jumbotron from '../components/Jumbotron'
 
 const IndexPage = () => {

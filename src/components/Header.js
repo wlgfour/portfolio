@@ -9,19 +9,13 @@ const Header = () => {
                 <div className='header-wrapper'>
                     <Fade bottom cascade>
                         <div className='heading-wrapper'>
-                            <h1>Tagline[0]</h1>
-                            <h1>Tagline[1]</h1>
-                            <h1>Tagline[2]</h1>
+                            {
+                                data.header.taglines.map((tagline, i) => (
+                                    <h1 key={i}>{tagline}.</h1>
+                                ))
+                            }
                         </div>
                     </Fade>
-                    {/* <Fade bottom>
-                        <p>header paragraph. hi I'm will etc etc...</p>
-                    </Fade> */}
-                    {/* <Fade bottom>
-                        <a href={`mailto:${data.contactEmail}`} className='primary-btn'>
-                            CONNECT WITH ME
-                        </a>
-                    </Fade> */}
                 </div>
             </div>
         </div>

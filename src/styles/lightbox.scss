@@ -8,13 +8,13 @@
         height: fit-content(60%);
         min-height: 200px;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -50%);
         border-radius: 25px;
         background:rgba(255, 255, 255, 0.95);
     }
 
     .lightbox-open {
-        top: 10%;
+        top: 40%;
         overflow: auto;
         visibility: visible;
         opacity: 1;
@@ -23,7 +23,7 @@
     
     .lightbox-closed {
         visibility: hidden;
-        top: -20%;
+        top: -80%;
         opacity: 0;
 
         transition: all 1s;

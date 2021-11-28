@@ -15,8 +15,9 @@ class Particle {
 
         this.x = randFloat(0, width)
         this.y = randFloat(0, height)
-        this.dx = randFloat(-2, 2)
-        this.dy = randFloat(-1, 1)
+        let s = 0.75;
+        this.dx = randFloat(-2 * s, 2 * s)
+        this.dy = randFloat(-1 * s, 1 * s)
         this.r = randInt(2, 8)
     }
 
@@ -46,7 +47,7 @@ const Jumbotron = () => {
 
         // initiate all of the particles
         let particles = [];
-        for (let i=0; i < width / 8; i++) {
+        for (let i=0; i < width / 10; i++) {
             particles.push(new Particle(width, height))
         }
         
