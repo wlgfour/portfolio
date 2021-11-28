@@ -1,5 +1,4 @@
 import React from "react";
-import p5 from 'p5'
 import {randFloat, randInt} from '../utils/rand'
 
 
@@ -12,7 +11,7 @@ class Particle {
     constructor(width, height) {
         this.width = width
         this.height = height
-
+        
         this.x = randFloat(0, width)
         this.y = randFloat(0, height)
         let s = 0.75;
@@ -20,13 +19,13 @@ class Particle {
         this.dy = randFloat(-1 * s, 1 * s)
         this.r = randInt(2, 8)
     }
-
+    
     move() {
         // move by dx, dy and turn around if moved too far
         if (this.x < 0 || this.x > this.width)
-            this.dx *= -1
+        this.dx *= -1
         if (this.y < 0 || this.y > this.height)
-            this.dy *= -1
+        this.dy *= -1
         this.x += this.dx
         this.y += this.dy
     }
@@ -35,16 +34,21 @@ class Particle {
 
 const Jumbotron = () => {
     const ref = React.useRef();
-
+    
     React.useEffect(() => {
-        new p5(animate, ref.current)
+        // server side rendering 
+        if (window) {
+            import('p5').then(p5 => {
+                new p5(animate, ref.current)
+            })
+        }
     })
-
+    
     const animate = (p) => {
         // get width and height of containing div
         const width = ref.current.clientWidth
         const height = ref.current.clientHeight
-
+        
         // initiate all of the particles
         let particles = [];
         for (let i=0; i < width / 10; i++) {
@@ -56,19 +60,19 @@ const Jumbotron = () => {
             const nw = ref.current.clientWidth
             const nh = ref.current.clientHeight
             p.resizeCanvas(nw, nh)
-
+            
             // set new environment for particles and teleport if they run away
             particles.forEach(particle => {
                 particle.width = nw
                 if (particle.x > nw)
-                    particle.x = randFloat(0, nw)
-
+                particle.x = randFloat(0, nw)
+                
                 particle.height = nh
                 if (particle.y > nh)
-                    particle.y = randFloat(0, nh)
+                particle.y = randFloat(0, nh)
             })
         });
-
+        
         // create the canvas and set the framerate
         p.setup = () => {
             p.createCanvas(width, height)

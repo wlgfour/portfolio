@@ -1,19 +1,17 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-
-const promotion = {
-    promoHeading: 'Promotion Heading',
-    promoPara: 'this is a paragraph that ppromotes me :)'
-}
+import data from '../data'
 
 const Promotion = () => {
     return (
         <div className='section'>
             <div className='container'>
-                <Fade bottom cascade>
-                    <h1>{promotion.promoHeading}</h1>
-                </Fade>
-                <p>{promotion.promoPara}</p>
+                <div className='promotion-container'>
+                    <Fade bottom cascade>
+                        <h1>{data.promotion.promoHeading}</h1>
+                    </Fade>
+                    <p>{data.promotion.promoPara}</p>
+                </div>
             </div>
         </div>
     )
