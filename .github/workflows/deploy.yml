@@ -15,7 +15,8 @@ jobs:
           username: ${{secrets.SSH_USER}}
 
           script: |
-            cd portfolio
-            git pull
-            npm install --legacy-peer-deps
-            gatsby build
+            whoami
+            # cd portfolio
+            # git pull
+            # npm install --legacy-peer-deps
+            # gatsby build
