@@ -19,4 +19,4 @@ jobs:
             cd portfolio
             git pull
             npm install --legacy-peer-deps
-            gatsby build
+            gatsby build 
