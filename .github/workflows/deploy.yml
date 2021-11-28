@@ -16,8 +16,7 @@ jobs:
           password: ${{secrets.SSH_PASS}}
 
           script: |
-            whoami
-            # cd portfolio
-            # git pull
-            # npm install --legacy-peer-deps
-            # gatsby build
+            cd portfolio
+            git pull
+            npm install --legacy-peer-deps
+            gatsby build
