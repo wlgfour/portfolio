@@ -39,7 +39,7 @@ const Jumbotron = () => {
         // server side rendering 
         if (window) {
             import('p5').then(p5 => {
-                new p5(animate, ref.current)
+                new p5.default(animate, ref.current)
             })
         }
     })
