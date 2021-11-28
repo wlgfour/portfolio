@@ -79,9 +79,11 @@ const data = {
     
     // =========== About ===========
     about: {
-      aboutp1: 'This is a paragraph about me.',
-      aboutp2: 'This is a paragraph about things I like doing, but focuased around work',
-      aboutp3: 'This is a paragraph about things I like, but not really related to work',
+      paragraphs: [
+        'My name is William Gerecke, but I go by Will. I am a 4th year computer science student at the University of Toronto and am specializing in artificial intelligence with a minor in statistics. Even though I attend school in Toronto, I grew up in central Massachusetts where I enjoyed spending time outdoors, playing sports with friends, and where I first developed a fondness for computer science.',
+        'During my time in university, I have developed my passion for computer science and I have been drawn to artificial intelligence and machine learning. I like these topics specifically because of the unification between theory and the real world that they provide, and I am motivated by how things that are theoretical can be applied to solve real problems.',
+        'I have also come to greatly enjoy working in groups and have had experience with group work on small and large projects. To me, group work idn\'t just about dividing work. It brings diverse opinions together and with good communication, provides a chance to build something impactful.',
+      ],
       image: meImage
     },
 
@@ -137,11 +139,10 @@ const data = {
 
 
       // =========== Footer ===========
-      social: [
-        { img: githubIcon, url: "https://github.com/chetanverma16" },
+      social: [  // git, linkedIn, facebook
         {
-          img: codepenIcon,
-          url: "https://www.codepen.com/",
+          img: githubIcon,
+          url: "https://github.com/chetanverma16"
         },
         {
           img: dribbbleIcon,
