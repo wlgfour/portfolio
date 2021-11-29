@@ -2,7 +2,7 @@
 
 Hi, my name is Will and this is the repository containing code for my personal website (or portfolio). The website can be accessed  at [https://william.gerecke.io/](https://william.gerecke.io/). Feel free to clone, fork, or contribute to the repository if you like it!
 
-[![website-screenshot](src/images/gereckeio.png) =200x](https://william.gerecke.io/)
+[![website-screenshot](src/images/gereckeio.png)](https://william.gerecke.io/)
 
 ## Code
 
