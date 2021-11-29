@@ -44,28 +44,23 @@ const data = {
     projects: [
         {
             title: 'Capstone project',
-            para:
-              'Worked on an interdisceplenary team of students with an international non-profit to develop an AI system for agriculture at scale.',
+            para: 'Worked on an interdisceplenary team of students with an international non-profit to develop an AI system for agriculture at scale.',
             imageSrc: sheepImage,
         }, {
             title: 'HiTS',
-            para:
-              'Worked at the Harvard Program in Theraputic Science (HiTS) to process data, develop code, and research novel deep learning approaches to protein understanding.',
+            para: 'Worked at the Harvard Program in Theraputic Science (HiTS) to process data, develop code, and research novel deep learning approaches to protein understanding.',
             imageSrc: protImage,
         }, {
             title: 'Teaching assistant',
-            para:
-              'Assisted as a TA in two classes, one of which was an industry-enriched software design course. Helped students develop full stack applications with an Agile workflow.',
+            para: 'Assisted as a TA in two classes, one of which was an industry-enriched software design course. Helped students develop full stack applications with an Agile workflow.',
             imageSrc: notebookImage,
         }, {
             title: 'TLI industry project',
-            para:
-              'Participated in a selective and enriched course where student teams partnered with Scotia bank to develop real-world solutions.',
+            para: 'Participated in a selective and enriched course where student teams partnered with Scotia bank to develop real-world solutions.',
             imageSrc: scotiaImage,
         }, {
             title: 'Personal portfolio',
-            para:
-              'Developed a responsive and mobile-friendly website that showcases my skills, projects, and passions.',
+            para: 'Developed a responsive and mobile-friendly website that showcases my skills, projects, and passions.',
             imageSrc: computerImage,
         }, {
           title: 'Reddit sentiment analysis',

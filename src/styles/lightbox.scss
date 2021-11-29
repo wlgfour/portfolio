@@ -49,37 +49,50 @@
     }
     
     .lightbox-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid rgb(196, 196, 196);
-        overflow: hidden;
+        min-height: 20vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
 
-        button {
-            width: 40px;
-            height: 40px;
-            font-size: 2rem;
-            margin: 10px;
-            background-color: rgba(0, 0, 0, 0);
-            color: black;
-            border: 0px;
-            transition: all 0.2s ease-in-out;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-            &:hover {
-                transform: scale(1.1);
-                background-color: rgba(0, 0, 0, 0.05);
+        .header-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(to bottom, rgba(224, 224, 224, 0.75), rgba(255, 255, 255, 0));
+            padding-bottom: 2rem;
+            
+    
+            div {
+
+                h2 {
+                    padding-left: 1rem;
+                }
+
+                button {
+                    margin-right: 10px;
+    
+                    width: 40px;
+                    height: 40px;
+                    font-size: 2rem;
+                    background-color: rgba(0, 0, 0, 0);
+                    color: black;
+                    border: 0px;
+                    transition: all 0.2s ease-in-out;
+                    text-decoration: none;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: rgba(0, 0, 0, 0.05);
+                    }
+                }
             }
-        }
-
-        h2 {
-            padding-left: 1rem;
         }
     }
     
     .lightbox-content {
-    
+        padding: 2rem;
     }
 }
 
