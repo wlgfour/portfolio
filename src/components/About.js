@@ -10,11 +10,13 @@ const About = () => {
                 <div className='content'>
                     <Fade bottom cascade>
                         <h1>About Me</h1>
-                        {
-                            data.about.paragraphs.map((para, i) => (
-                                <p key={i}>{para}</p>
-                            ))
-                        }
+                        <div>
+                            {
+                                data.about.paragraphs.map((para, i) => (
+                                    <p key={i}>{para}</p>
+                                ))
+                            }
+                        </div>
                     </Fade>
                 </div>
                 <div className='image-wrapper'>
