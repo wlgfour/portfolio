@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal'
 import data from '../data'
 
 const Skills = () => {
@@ -7,14 +8,16 @@ const Skills = () => {
             <div className='container'>
                 <div className='skills-container'>
                     <h1>Skills</h1>
-                    <div className='skills-grid'>
-                        {data.skills.map((skill, i) => (
-                            <div className='skill' key={i}>
-                                <img src={skill.img} alt='skill icon' draggable='false'></img>
-                                <p>{skill.para}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <Fade bottom cascade>
+                        <div className='skills-grid'>
+                            {data.skills.map((skill, i) => (
+                                <div className='skill' key={i}>
+                                    <img src={skill.img} alt='skill icon' draggable='false'></img>
+                                    <p>{skill.para}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>

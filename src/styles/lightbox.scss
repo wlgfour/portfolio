@@ -4,7 +4,12 @@
         position: fixed;
         display: block;
         z-index: 5001;
-        width: 60%;
+        @include media(">=tablet") {
+            width: min(750px, 60%);
+        }
+        @include media("<tablet") {
+            width: 80%;
+        }        
         height: fit-content(60%);
         min-height: 200px;
         left: 50%;
@@ -14,7 +19,7 @@
     }
 
     .lightbox-open {
-        top: 40%;
+        top: 45%;
         overflow: auto;
         visibility: visible;
         opacity: 1;
@@ -91,10 +96,21 @@
         }
     }
     
+    // sets max height and adds scroll bar
     .lightbox-content {
-        padding: 2rem;
+        max-height: 55vh;
+        overflow: auto;
     }
 }
 
 
+// This is for the components that are loaded dynamically. provide some default styles
+.lightbox-content-wrapper {
+    padding: 0 1.5rem 1.5rem 1rem;
+
+    p {
+        display: block;
+        word-break: keep-all;
+    }
+}
 
