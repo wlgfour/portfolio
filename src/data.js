@@ -43,9 +43,9 @@ const data = {
     // =========== Global ===========
     header: {
       taglines: [
-        'Researching',
-        'Developing',
-        'Improving'
+        'Research',
+        'Build',
+        'Iterate'
       ]
     },
 

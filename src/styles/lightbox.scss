@@ -14,7 +14,7 @@
     }
 
     .lightbox-open {
-        top: 40%;
+        top: 45%;
         overflow: auto;
         visibility: visible;
         opacity: 1;
@@ -91,10 +91,21 @@
         }
     }
     
+    // sets max height and adds scroll bar
     .lightbox-content {
-        padding: 2rem;
+        max-height: 55vh;
+        overflow: auto;
     }
 }
 
 
+// This is for the components that are loaded dynamically. provide some default styles
+.lightbox-content-wrapper {
+    padding: 0 1.5rem 1.5rem 1rem;
+
+    p {
+        display: block;
+        word-break: keep-all;
+    }
+}
 
