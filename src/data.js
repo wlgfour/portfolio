@@ -1,3 +1,5 @@
+import React from 'react'
+
 // images
 import meImage from './images/me.jpg'
 import sheepImage from './images/sheep.jpg'
@@ -24,6 +26,14 @@ import githubIcon from './images/github.svg'
 import facebookIcon from './images/facebook.svg'
 import linkedinIcon from './images/linkedin.svg'
 
+// work components
+import CSF from './components/work_pages/CSF'
+import HMS from './components/work_pages/HMS'
+import Portfolio from './components/work_pages/portfolio'
+import Sentiment from './components/work_pages/sentiment'
+import TA from './components/work_pages/TA'
+import TLI from './components/work_pages/TLI'
+
 
 const data = {
     // =========== Global ===========
@@ -44,35 +54,36 @@ const data = {
     projects: [
         {
             title: 'Capstone project',
-            para:
-              'Worked on an interdisceplenary team of students with an international non-profit to develop an AI system for agriculture at scale.',
+            para: 'Worked on an interdisceplenary team of students with an international non-profit to develop an AI system for agriculture at scale.',
             imageSrc: sheepImage,
+            lightBox: (<CSF></CSF>)
         }, {
             title: 'HiTS',
-            para:
-              'Worked at the Harvard Program in Theraputic Science (HiTS) to process data, develop code, and research novel deep learning approaches to protein understanding.',
+            para: 'Worked at the Harvard Program in Theraputic Science (HiTS) to process data, develop code, and research novel deep learning approaches to protein understanding.',
             imageSrc: protImage,
+            lightBox: (<HMS></HMS>)
         }, {
             title: 'Teaching assistant',
-            para:
-              'Assisted as a TA in two classes, one of which was an industry-enriched software design course. Helped students develop full stack applications with an Agile workflow.',
+            para: 'Assisted as a TA in two classes, one of which was an industry-enriched software design course. Helped students develop full stack applications with an Agile workflow.',
             imageSrc: notebookImage,
+            lightBox: (<TA></TA>)
         }, {
             title: 'TLI industry project',
-            para:
-              'Participated in a selective and enriched course where student teams partnered with Scotia bank to develop real-world solutions.',
+            para: 'Participated in a selective and enriched course where student teams partnered with Scotia bank to develop real-world solutions.',
             imageSrc: scotiaImage,
+            lightBox: (<TLI></TLI>)
         }, {
             title: 'Personal portfolio',
-            para:
-              'Developed a responsive and mobile-friendly website that showcases my skills, projects, and passions.',
+            para: 'Developed a responsive and mobile-friendly website that showcases my skills, projects, and passions.',
             imageSrc: computerImage,
+            lightBox: (<Portfolio></Portfolio>)
         }, {
           title: 'Reddit sentiment analysis',
           para:
             'Created a Python program that processed thousands of comments from Reddit and used contemporary natural language processing techniques to visualize the net sentiment of different communitues.',
           imageSrc: sentimentImage,
-      },
+          lightBox: (<Sentiment></Sentiment>)
+        },
     ],
     
     
