@@ -1,7 +1,7 @@
 import React from 'react'
 import LightBox from './LightBox'
 
-const Card = ({heading, paragraph, imgUrl, projectLink}) => {
+const Card = ({heading, paragraph, imgUrl, projectLink, lightBoxContent}) => {
     return (
         <div
             className='card'
@@ -17,7 +17,7 @@ const Card = ({heading, paragraph, imgUrl, projectLink}) => {
                 <p className='text'>{paragraph}</p>
             </div>
             <LightBox title={heading} img={imgUrl}>
-
+                {lightBoxContent}
             </LightBox>
         </div>
     )
