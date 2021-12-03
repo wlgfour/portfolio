@@ -14,6 +14,7 @@ The code is structured with config files at the top level. The two main director
 - `styles`: is a flat directory of all of the `scss` files that the page uses. `index.html` imports `main.scss` and `main.scss` imports all of the other style pages.
 - `utils`: contains unitary files that expose one or more functions to perform tasks that do not generate parts of the website.
 - `.github/workflows`: contains the workflow `.yml` files used for GitHub Actions. `deploy.yml` is configured to use GitHub Secrets to deploy the website to a pre-configured DigitalOcean droplet, but should work on any ubuntu server that accepts SSH connections and is configured correctly.
+- `.env.${NODE_ENV}`: contains environment variables. there are two options for the node environment, production and development. the file contains secrets, so it is in the `.gitignore` and must be created manually on the server.
 
 ## Notes
 
@@ -21,7 +22,7 @@ The code is structured with config files at the top level. The two main director
 
 ## Building
 
-The code comes with a development server that can be started using `npm start`. A production page can be compiled using `npm build`.
+The code comes with a development server that can be started using `npm start`. A production page can be compiled using `npm build`. If building for production and you wish to include Google Analytics, it is important to include the `GATSBY_GA` environment variable in `.env.production`.
 
 ## Sources
 
