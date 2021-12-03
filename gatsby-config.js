@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -25,6 +29,20 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+
+    // google analytics (https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/)
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          process.env.GATSBY_GA, // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: false,
+        },
+      },
     },
   ],
 };
