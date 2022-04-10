@@ -11,7 +11,7 @@ import notebookImage from './images/notebook.jpg'
 
 
 // skills icons
-import reactIcon from './images/react.svg'
+// import reactIcon from './images/react.svg'
 import jsIcon from './images/javascript.svg'
 import pythonIcon from './images/python.svg'
 import sqlIcon from './images/sql.svg'
@@ -20,6 +20,7 @@ import pytorchIcon from './images/pytorch.svg'
 import gitIcon from './images/git.svg'
 import linuxIcon from './images/linux.svg'
 import cloudIcon from './images/cloud.svg'
+import cppIcon from './images/cpp.svg'
 
 // Social Icon
 import githubIcon from './images/github.svg'
@@ -71,18 +72,21 @@ const data = {
             title: 'TLI industry project',
             para: 'Participated in a selective and enriched course where student teams partnered with Scotia bank to develop real-world solutions.',
             imageSrc: scotiaImage,
-            lightBox: (<TLI></TLI>)
+            lightBox: (<TLI></TLI>),
+            url: 'https://github.com/PatrickVuscan/RequestToPay_BackEnd'
         }, {
             title: 'Personal portfolio',
             para: 'Developed a responsive and mobile-friendly website that showcases my skills, projects, and passions.',
             imageSrc: computerImage,
-            lightBox: (<Portfolio></Portfolio>)
+            lightBox: (<Portfolio></Portfolio>),
+            url: 'https://github.com/wlgfour/portfolio'
         }, {
-          title: 'Reddit sentiment analysis',
+          title: 'Polarization in online communities',
           para:
-            'Created a Python program that processed thousands of comments from Reddit and used contemporary natural language processing techniques to visualize the net sentiment of different communitues.',
+            'Used Exponential Random Graph Models and sentiment analysis to perform a statistical analysis on polarization in online communities.',
           imageSrc: sentimentImage,
-          lightBox: (<Sentiment></Sentiment>)
+          lightBox: (<Sentiment></Sentiment>),
+          url: 'https://github.com/wlgfour/social_networks'
         },
     ],
     
@@ -107,14 +111,14 @@ const data = {
           img: jsIcon,
           para: 'I am familiar with web technologies such as JavaScript, HTML, CSS, and several variants of these components. I have written web servers using Node.js as well as front end applications like this page here.'
         }, {
+          img: cppIcon,
+          para: 'I have used C/C++ for building a filesystem and scheduler, as well as a graphics processing pipeline that includes ray-tracing, skinning, kinematics, and more.'
+        }, {
           img: sqlIcon,
           para: 'My first deep dive into SQL was with PostgreSQL in a course I took in my second year of university. Since then I have been using relational databases consistently and have only become more familiar with using them.'
         }, {
           img: latexIcon,
           para: 'I am very familiar with LaTeX and use it several times a week. I have used LaTeX for writing reports, creating diagrams, and writing equations.'
-        }, {
-          img: reactIcon,
-          para: 'In addition to taking a web development course that was taught with React, I have used the framework for several personal projects such as this website. I know the framework well and am comfortable making applications with it.'
         }, {
           img: pytorchIcon,
           para: 'I have used PyTorch extensively to research and develop deep learning models and data pipelines. Multiple courses at the University of Toronto taught with PyTorch and I used it to develop novel models in my time working at the Harvard Medical School.'
@@ -123,10 +127,10 @@ const data = {
           para: 'Git and version control are staples in my every-day life. Throughout university I have used Git to submit assignments, many of which were graded based on my ability to proficiently use version control. I also used Git at Harvard and I am familiar with GitHub Actions.'
         }, {
           img: linuxIcon,
-          para: 'Linux is my primary operating system and I have used it extensively as a workstation as well in headless settings when connecting to remote machines.'
+          para: 'Linux is my primary operating system and I have used it extensively as a workstation as well as in headless settings when connecting to remote machines.'
         }, {
           img: cloudIcon,
-          para: 'I am familiar with cloud applications and techniques used to deploy solutions to the cloud. While not specifically a cloud solution, I am familiar with using Docker in a cloud setting.'
+          para: 'I am familiar with cloud applications and techniques used to deploy solutions to the cloud.'
         },
       ],
 

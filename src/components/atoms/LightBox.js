@@ -6,10 +6,18 @@
  */
 
 import React from 'react'
+// import 'font-awesome/css/font-awesome.min.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const LightBox = (props) => {
+    
     const [isOpen, setIsOpen] = React.useState(false)
-    const toggle = () => setIsOpen(!isOpen)
+    let toggle;
+    if (props.projectLink) {
+        toggle = () => window.open(props.projectLink, '_blank')
+    } else {
+        toggle = () => setIsOpen(!isOpen)
+    }
 
     // class to add if lightbox open
     const lbOpen = isOpen ? 'lightbox-open' : 'lightbox-closed';
@@ -18,6 +26,7 @@ const LightBox = (props) => {
         <div className='lightbox-wrapper'>
             {/* this button is rendered when the lightbox isn't shown and is used to expand the child component */}
             <button className='primary-btn' onClick={toggle}>
+                {/* More{props.projectLink ? <FontAwesomeIcon icon="fa-solid fa-up-right-from-square" /> : ''} */}
                 More
             </button>
 
