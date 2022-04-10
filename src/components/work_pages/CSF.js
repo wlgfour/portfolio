@@ -11,6 +11,7 @@ const CSF = () => {
             </p>
             <p>
                 During this experience, we faced many challenges and design choices that we worked as a team to solve. One of the biggest challenges is that we didn't know what would work because this type of thing hasn't been done before. After extensive research, we were able to break the project into smaller modules. The idea behind this was that we were able to assess different solutions for each module, and wire them all together. This also allowed the team to more effectively break down individual tasks so that we could have a faster development lifecycle.
+
             </p>
         </div>
     )
