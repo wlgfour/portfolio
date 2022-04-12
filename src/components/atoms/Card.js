@@ -16,7 +16,7 @@ const Card = ({heading, paragraph, imgUrl, projectLink, lightBoxContent}) => {
                 <h1 className='header'>{heading}</h1>
                 <p className='text'>{paragraph}</p>
             </div>
-            <LightBox title={heading} img={imgUrl}>
+            <LightBox title={heading} img={imgUrl} projectLink={projectLink}>
                 {lightBoxContent}
             </LightBox>
         </div>
